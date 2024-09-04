@@ -7,6 +7,8 @@ Given a list of unique words, your task is to find all pairs of distinct indices
 2. I then created the primary function for the problem,  *getPairs()*. I initialized an empty array of type "number[][]" for the result, then I created a **nested for-loop**, to iterate through the word list. The outer loop assigns the current word of iteration to variable *wordA*. Then the inner loop follows which iterates through the word list as well. It checks if the outer iteration is not equal to the inner iteration, if it's not,
 variable *wordB* is given the value of that iteration's word and  *isPalindrome()* is called with the concat of *wordA* and *wordB* parameter. If it returns true then index of the outer(i) and inner iteration(j) is added to the array in this format: ```[i,j]```.  Once the inner loop ends, the outer loop follows and starts again until it iterates through all of the word list.
 
+3. I then tested it by having an array of strings given to variable **input** and output the value of *getPairs(input)* through the console with console.log.
+
 
 ## Instructions to Run the Code
 1. Make sure Node is installed on your device.
