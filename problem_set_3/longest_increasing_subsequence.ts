@@ -14,5 +14,6 @@ function getLongestSub(nums:number[]): number{
     return Math.max.apply(Math,countArr);
 }
 
+//test input here
 let inputArr = [10, 9, 2, 5, 3, 7, 101, 18]
 console.log(getLongestSub(inputArr));
